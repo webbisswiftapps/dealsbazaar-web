@@ -1,0 +1,31 @@
+
+
+ul.cat-menu{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+ul.cat-menu li{
+    list-style-type: none;
+}
+
+ul.cat-menu li a{
+    display: block;
+    color:#0288d1;    
+    font-size: 12px;
+    font-weight: 400;
+    background: #ffffff !important;
+    border-radius: 0;
+    text-decoration: none;
+}
+
+ul.cat-menu li a:hover{
+    color: #073C5D;
+}
+
+ul.cat-menu li a i{
+    font-weight: 400;
+}
+

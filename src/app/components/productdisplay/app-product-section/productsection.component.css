@@ -1,0 +1,46 @@
+.product_section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #fafafa;
+    padding: 5px;
+    
+}
+
+h3.section_title{
+    font-family: "Montserrat", sans-serif;
+    color: #555;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+
+h3.section_title > img{
+    width: 100px;
+    display: block;
+    margin-left: 50px;
+    float:right;
+}
+
+
+
+
+@media(max-width: 767px) {
+    h3.section_title{
+        font-family: "Montserrat", sans-serif;
+        color: #333;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    h3.section_title > img{
+        width: 60px;
+        display: inline-block;
+        margin-left: 5px;
+    }
+    
+  }
+
+
+  
+ 

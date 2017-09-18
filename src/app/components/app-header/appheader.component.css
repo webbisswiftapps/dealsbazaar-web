@@ -1,0 +1,193 @@
+
+  a.google_play > img{
+    width:150px;
+    height:60px;
+    margin-top:auto;
+    float:right;
+   }
+
+   a.app_store > img{
+    width:150px;
+    height:60px;
+    margin-top:auto;
+    float:right;
+    padding:10px;
+   }
+
+
+  .center {
+    margin:auto;
+  }
+
+
+  .header-icon {
+    padding: 0 14px;
+  }
+
+  .app-icon{
+    width:32px;
+    height:32px;
+  }
+  
+ 
+  .header-toolbar {
+    z-index: 10;
+    background-color: #F44336;
+    color:#ffffff;
+    font-family: 'Poppins', sans-serif;
+ 
+   }
+
+   .title{
+      font-size: 22px;
+      font-weight:bold;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+      line-height: 0;
+   }
+
+   .sub_title{
+      font-size:10px;
+      display:block;
+      font-family: 'montserrat', sans-serif;
+      font-weight: 400;
+      line-height: 1; 
+      text-align: center; 
+      color:#fff;
+      text-transform: uppercase;
+      letter-spacing: 2;    
+   }
+
+
+   
+
+
+  .searchbox{
+    width:45%;
+  }
+
+  md-input-container > input{
+    height: 40px;
+    width:100%;
+    text-align:left;
+    padding-left: 20px;
+    padding-right: 20px;
+    border:none;   
+    border-radius: 4px 0px 0px 4px;
+    font-family: 'Montserrat', sans-serif;    
+    vertical-align: middle;
+    font-size: 14px;   
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2); 
+  }
+
+
+  /* individual: webkit */
+.searchbox input::-webkit-input-placeholder { 
+  color: #c5c4c4;
+}
+
+
+md-option{
+  font-family: 'Montserrat', sans-serif;    
+  
+}
+  #searchbutton{
+    font-size: 14px;   
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2); 
+    font-family: 'Poppins', sans-serif; 
+    background-color:#0288d1;   
+    height: 40px;
+    border:none;
+    border-radius: 0px 4px 4px 0px;
+    color:#ffffff;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: normal;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2); 
+    margin-left: -10px;    
+  }
+
+  .header-spacer {
+    flex: 1 1 auto;
+  }
+
+
+  .show_on_small{
+    display:none !important;
+  }
+
+
+
+  @media(max-width: 1380px) {
+    .searchbox{
+      width:30%;
+    }
+    .show_on_small{
+      display:none !important;
+    }
+
+    a.google_play > img{
+      margin-left:50px;
+     }
+
+
+  }
+
+
+ 
+
+
+  @media(max-width: 1000px) {
+    .searchbox{
+      width:70%;
+      margin-left:0;
+      margin-right:100px;
+    }
+
+    .searchbox input{
+        padding-top:7px;
+        padding-bottom:7px;
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+  
+
+    .show_on_small{
+      display:block !important;
+    }
+
+    .hide_on_small{
+      display:none !important;
+    }
+
+    a.google_play > img{
+      width:100px;
+      height:40px;
+      margin-top:auto;
+      float:right;
+      margin-left:10px;
+     }
+  
+     a.app_store > img{
+      width:100px;
+      height:40px;
+      margin-top:auto;
+      float:right;
+      padding:6px;
+     }
+     
+
+  }
+
+
+  
+
+
+ 
+
+ 
+  
+
+  
+

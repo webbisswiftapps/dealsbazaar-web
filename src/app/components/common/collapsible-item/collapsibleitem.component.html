@@ -1,0 +1,10 @@
+<a class="collapse_control" href="#" (click)="isCollapsed = !isCollapsed">
+    {{ title }}
+</a>
+<div (collapsed)="collapsed($event)"
+(expanded)="expanded($event)"
+[collapse]="isCollapsed"
+>
+ <ng-content></ng-content>
+
+</div>

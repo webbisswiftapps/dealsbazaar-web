@@ -1,0 +1,46 @@
+<div class="md-layout">
+<db-app-header [title]="title" class="mat-elevation-z99">
+</db-app-header>
+
+<div class="container-fluid main-content"> 
+
+        <div class="row" style="margin-top: 20px;">
+
+                <!-- Mega Menu when on large screens -->
+                <div class="col-xl-3 col-md-4 hidden-sm-down side-content">
+                        <db-catnav-demo></db-catnav-demo>
+                </div> 
+                
+                <!-- Slider -->
+                <div class="col-xl-7 col-md-5 col-sm-6 col-xs-6">
+                        <db-app-slider></db-app-slider>          
+                </div>
+
+                <!-- Ad column -->
+                <div class="col-xl-2 col-md-3 col-sm-6 col-xs-6 side-content" style=" margin-top: 5px; height: 350px; background: #fff; padding: 10px;">
+
+                        <img style="width: 100%; height: auto; margin: 0 auto;"src="../../../assets/images/ads/small_square_ad.png" />
+
+                </div>
+
+        </div>
+
+
+        <!-- Deals -->
+                          <!-- Deals-->
+                          <div class="row">
+                                        <div class="col-sm-12">
+                                             <db-deals-list></db-deals-list>
+                                        </div>
+                                     </div>
+
+        
+        
+    </div>
+<br>
+<db-app-footer></db-app-footer>
+
+
+
+
+

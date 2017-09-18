@@ -1,0 +1,66 @@
+<md-toolbar color="primary" class="header-toolbar">￼
+
+     <!-- Collapsible small menu on small screens -->
+
+     <div class="header-spacer hidden-md-down"></div>
+     
+     <div class="hidden-md-up">
+            <db-cat-sidenav></db-cat-sidenav>
+    </div>
+        <div>
+        <span class="title">{{title}}</span>
+        <span class="sub_title">Best Deals & Offers</span>  
+    </div>     
+        
+
+          <div class="header-spacer"></div>
+
+        <!-- Search Box Autocomplete -->
+        <div class="searchbox hide_on_small">
+          <md-input-container>
+              <input mdInput 
+              placeholder="Search for Products &amp; Brands " [mdAutocomplete]="auto" 
+              [formControl]="optionsControl">
+          </md-input-container>
+          <md-autocomplete #auto="mdAutocomplete">
+              <md-option *ngFor="let option of filteredOptions | async" [value]="option">
+                {{ option }}
+              </md-option>
+          </md-autocomplete>
+          <button id="searchbutton"  md-raised-button><md-icon>search</md-icon></button>
+        </div>
+
+        <div class="header-spacer"></div>
+
+    <!-- Download app Google Play -->
+    <a class="google_play" href='https://play.google.com/store/apps/details?id=apps.webbisswift.dealsbazaar&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+      <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
+    </a>
+
+    <!-- Download app App Store -->
+    <a class="app_store" href='https://play.google.com/store/apps/details?id=apps.webbisswift.dealsbazaar&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+      <img alt='Download from App Store' src='../../../assets/images/appstore_download.svg'/>
+    </a>
+
+    <div class="header-spacer hidden-md-down"></div>
+    
+
+
+    <md-toolbar-row class="show_on_small">
+        <div class="searchbox">
+            <md-input-container>
+                <input mdInput 
+                placeholder="Search for Products &amp; Brands " [mdAutocomplete]="auto" 
+                [formControl]="optionsControl">
+            </md-input-container>
+            <md-autocomplete #auto="mdAutocomplete">
+                <md-option *ngFor="let option of filteredOptions | async" [value]="option">
+                  {{ option }}
+                </md-option>
+            </md-autocomplete>
+            <button id="searchbutton"  md-raised-button><md-icon>search</md-icon></button>
+          </div>
+    </md-toolbar-row>
+    
+
+</md-toolbar>

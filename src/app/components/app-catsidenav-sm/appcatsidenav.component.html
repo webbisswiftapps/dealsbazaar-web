@@ -1,0 +1,25 @@
+
+<div class="sm_cat_menu_wrapper">
+
+        <md-icon class="md-24 mat-icon material-icons collapse_control ham_menu" 
+        role="img" aria-hidden="true" (click)="isCollapsed = !isCollapsed">menu</md-icon>
+
+        
+    <div (collapsed)="collapsed($event)"
+    (expanded)="expanded($event)"
+    [collapse]="isCollapsed"
+    class="cat_menu_abs"
+    >
+        <div class="list-group cat-side-menu">
+
+                    <db-collapsible *ngFor="let label of categoryLabels; let index = index" class="list-group-item item" [title]="label">
+                        <db-catmenu-root [categoryid]="categories[index]"></db-catmenu-root>
+                    </db-collapsible>     
+        </div>
+
+    </div>
+</div> 
+
+  
+  
+   

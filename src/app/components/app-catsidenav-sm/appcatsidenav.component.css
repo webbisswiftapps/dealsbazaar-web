@@ -1,0 +1,28 @@
+
+.sm_cat_menu_wrapper{
+  margin-left: 15px;
+  margin-right: 15px; 
+}
+
+.cat_menu_abs{
+  position:absolute;
+  width: 85%;
+  margin-top:10px;
+  z-index: 99;
+}
+
+.ham_menu{
+  background: #F44336;
+  display: block;
+}
+
+.cat-side-menu{
+    font-family:"Montserrat", sans-serif;
+}
+.cat-side-menu .header{
+    background:#0288d1;
+    color:#ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+

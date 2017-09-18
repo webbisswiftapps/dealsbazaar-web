@@ -1,0 +1,20 @@
+
+<a class="product" [href]="product.product_link" target="_blank">
+<div class="product-card card__one">
+
+        <div class="product_image_container">
+            <span class="product_discount" *ngIf="product.product_discount">{{product.product_discount}}</span>                    
+            <img class="product-image" [src]="product.product_image" />
+        </div>
+        
+        <div class="product-content">     
+                <span class="title">{{product.product_name}}</span>                
+            <span *ngIf="product.product_old_price" class="price old">{{product.product_old_price}}</span>
+
+            <div class="price_box">
+                <span *ngIf="product.product_new_price" class="price current">{{product.product_new_price}}</span>       
+                <span *ngIf="product.product_price" class="price current">{{product.product_price}}</span>
+            </div>
+        </div>          
+</div>
+</a>

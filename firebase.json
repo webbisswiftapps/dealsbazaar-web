@@ -1,0 +1,9 @@
+{
+    "firebase": "dealsbazaar",
+    "public": "./dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+}

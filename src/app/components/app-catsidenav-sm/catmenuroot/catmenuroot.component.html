@@ -1,0 +1,24 @@
+<span *ngIf="progress"> Loading .. </span>
+<ul class="cat-menu" *ngIf="!progress">
+    <li  *ngFor="let cat of categories">
+        <db-collapsible *ngIf="cat.sub else subElseBlock" [title]="cat.name">
+                <ul class="cat-menu">
+                        <li *ngFor="let subcat of cat.sub">
+                            <a href="#">
+                                <i class="fa fa-chevron-right" aria-hidden="true"></i>                                    
+                                {{ subcat.name }}
+                            </a>
+                        </li>    
+                    </ul>
+        </db-collapsible>
+
+        <ng-template #subElseBlock>
+            <a href="#">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                {{ cat.name }}
+             </a>
+        </ng-template>
+        
+    </li>
+</ul>
+

@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* Remove browser default stylings */
+
+*:focus {
+    outline: none;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background: #ededed;  
+}
+
+button:focus {outline:0;}
+
+
+ .float_right{
+     float:right;
+ }
+
+ .float_left{
+     float:left;
+ }
+
+
+
+ 

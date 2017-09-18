@@ -1,0 +1,22 @@
+
+<div *ngIf="!slideLoadError" class="carousel-container">
+<carousel *ngIf="visible==true" [interval]="myInterval" [noWrap]="noWrapSlides"
+ [(activeSlide)]="activeSlideIndex">
+  <slide *ngFor="let slide of slides; let index=index">
+    <a [href]="slide.offer_link" target="new"><img class="img-fluid slide_img" [src]="slide.offer_image"></a>
+  </slide>
+</carousel>
+<md-progress-spinner
+*ngIf="progress"
+class="slide_progress"
+[color]="color"
+[mode]="mode"
+>
+</md-progress-spinner>
+</div>
+
+
+
+
+
+

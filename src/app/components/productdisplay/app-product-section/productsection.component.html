@@ -1,0 +1,21 @@
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="product_section">
+            <h3 class="section_title">{{ section.listing_title }}
+                <img [src]="section.store_logo" />
+            </h3>
+            <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
+                <div ngxSlickItem *ngFor="let product of section.products" class="slide">
+
+                    <db-product-item [product]="product"></db-product-item>                        
+                    
+                </div>
+            </ngx-slick>
+        </div>
+    </div>
+</div>
+
+
+
+
